@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <form id="f1">
+           FirstName:<input type="text" />
+           LastName:<input type="password" />
+       </form>
+        <p id="demo"></p>
+         <button onclick="myfu()">lkds</button>
+        <script>
+            function myfu(){
+            let a = document.forms["f1"];
+           
+            let b = "";
+            for(let i =0 ;i<a.length;i++)
+            {
+                b +=a.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = b;
+        }
+        </script>
+    </body>
+</html>

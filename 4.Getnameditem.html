@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <button onclick="myfuc()" class="ex">try it
+
+       </button>
+       <p id="dem0" />
+       <script>
+           function myfuc()
+           {
+               let a = document.getElementsByTagName("Buttton")[0];
+               let b = a.attributes.item(0).name;
+               document.getElementById("dem0").innerHTML = b;
+           }
+        </script>
+    </body>
+</html>

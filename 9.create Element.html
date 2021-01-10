@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <button onclick="myfuc()">Try it</button>
+       <input type="text" />
+       <script>
+           function myfuc()
+           {
+               let a = document.createElement("input");
+               let d = document.getElementsByTagName("input")[0];
+               let b = document.createAttribute("type");
+               b.value = "password";
+               let c = d.setAttribute(b);
+               document.body.appendChild(c);
+           }
+        </script>
+    </body>
+</html>

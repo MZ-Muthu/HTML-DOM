@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body  onclick="myFunction()">
+       <input type="text" class="aa" id="bb">
+       <input type="submit">
+       <p id ="demo"></p>
+       <script>
+           function myFunction(){
+           let a = document.activeElement.attributes.length;
+           document.getElementById("demo").innerHTML = a;
+           }
+          
+        </script>
+    </body>
+</html>

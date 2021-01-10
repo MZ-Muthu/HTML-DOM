@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <button id="aa" onclick="myfuc()" class="dd">try it</button>
+        <script>
+            function myfuc()
+            {
+                let a = document.getElementsByTagName("button")[0];
+                let b =a.attributes.length;
+
+                for(let i =0;i<b;i++)
+                {
+                    document.write("first was " + a.attributes.item(i).name +": name was" +  a.attributes.item(i).value);
+                }
+            }
+        </script>
+    </body>
+</html>
